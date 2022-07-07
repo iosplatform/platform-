@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>iOS platform</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="stylesheet" href="ios.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+            <img src="logo.svg">
+            <nav>
+                <ul id="menuList">
+    <li><a href="#">Home</a></li>
+   <li><a href="#">About</a></li>
+  <li><a href="#">iOS news</a></li>
+ <li><a href="#">iOS versions</a></li>
+  <li><a href="#">Community</a></li>
+  <li><a href="#">iOS club</a></li>
+  <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+ <div class="container" onclick="togglemenu()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+    </header>
+    
+    <script>
+    var menuList = document.getElementById("menuList");
+    
+    menuList.style.maxHeight = "0px";
+    
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "500px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+    
+    
+    <section class="ios">
+            <div class="words">
+                <h1>iOS platform</h1>
+                <h2>Live with crusial design</h2>
+                <h3>You can use more functions</h3>
+               <h4>Just feel iOS atmosphere</h4>
+               <p>This platform is created by iOS developers , here you can use all iOS functions and get more results</p>
+            </div>
+            
+            <div class="imge">
+                <img src="bg.jpg">
+            </div>
+            
+       <div class="button1">
+           <a href="#">Know more</a>
+       </div>
+    </section>
+    
+    
+    <div class="loader">
+        <img src="logo.svg">
+    </div>
+    <script>
+            $(window).on("load",function(){
+                $(".loader").fadeOut("show")
+            });
+        </script>
