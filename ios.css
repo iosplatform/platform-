@@ -303,7 +303,7 @@ header .container {
 .ios .button1 a 
 {
     position: absolute;
-    padding: 17px 55;
+    padding: 17px 55px;
     background: rgb(249,138,27);
 background: linear-gradient(90deg, rgba(249,138,27,1) 0%, rgba(255,74,0,1) 100%);
     color: #fff;
